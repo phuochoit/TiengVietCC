@@ -11,7 +11,7 @@ const BANNER_HEADER = 'ca-app-pub-1070789846238739/6598216145';
 const BANNER_FOOTER = 'ca-app-pub-1070789846238739/6699779188'
 
 AdMobInterstitial.setTestDeviceID("EMULATOR");
-// console.disableYellowBox = true;
+console.disableYellowBox = true;
 
 export class AdMobBannerHeader extends React.Component {
     render() {
