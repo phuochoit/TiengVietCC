@@ -21,7 +21,8 @@
             "package": "com.phuochoit.tiengviet40",
             "permissions": [
                 "default"
-            ]
+            ],
+            "versionCode":3
         }
     }
 }

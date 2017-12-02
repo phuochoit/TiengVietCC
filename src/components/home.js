@@ -29,7 +29,7 @@ class Home_Component extends Component {
             showToast: true
         });
         Toast.show({
-            text: 'Đã sao thành công!',
+            text: 'Đã sao chép thành công!',
             position: 'bottom',
             duration: 2000
         });
