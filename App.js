@@ -1,30 +1,18 @@
-import React from 'react';
-import { AppLoading, Font } from 'expo';
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+import React, { Component } from 'react';
 import { Root } from "native-base";
 import Home_Component from "./src/components/home";
 
-class App extends React.Component {
+export default class App extends Component<{}> {
     constructor(props) {
         super(props);
-        this.state = ({
-            fontLoaded: false,
-        });
     }
-
-    async componentWillMount() {
-        await Expo.Font.loadAsync({
-            'Roboto': require('./node_modules/native-base/Fonts/Roboto.ttf'),
-            'Roboto_medium': require('./node_modules/native-base/Fonts/Roboto_medium.ttf'),
-        });
-        this.setState({ fontLoaded: true });
-    }
-
-
     render() {
-        if (!this.state.fontLoaded) {
-            return (<Expo.AppLoading />);
-        }
-
         return (
             <Root>
                 <Home_Component />
@@ -32,4 +20,3 @@ class App extends React.Component {
         );
     }
 }
-export default App; 
